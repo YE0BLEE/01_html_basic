@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+    .container {
+			width: 200px;
+			height: 150px;
+			display: flex;
+			/* left to right 여러줄 */
+			flex-flow: row wrap;
+			background-color: #eee;
+			margin: 30px;
+			float: left;
+		}
+
+		.box {
+			width: 80px;
+			background-color: #222;
+			border: 1px dotted #e1e1e1;
+		}
+
+		p {
+			color: #fff;
+			text-align: center;
+		}
+
+		#opt1 {
+			/* 교차축 시작점부터 배치 */
+			align-content: flex-start;
+		}
+		#opt2 {
+			/* 교차축 끝부터 배치 */
+			align-content: flex-end;
+		}
+		#opt3 {
+			/* 교차축 중앙 배치 */
+			align-content: center;
+		}
+		#opt4 {
+			/* 시작과 끝 배치 후 나머지 간격 배치 */
+			align-content: space-between;
+		}
+		#opt5 {
+			/* 전체 요소 동일간격 배치 */
+			align-content: space-around;
+		}
+		#opt6 {
+			/* 전체 요소 부모 크기에 맞춰 늘여서 배치 */
+			align-content: stretch;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container" id="opt1">
+		<div class="box"><p>1</p></div>
+		<div class="box"><p>2</p></div>
+		<div class="box"><p>3</p></div>
+		<div class="box"><p>4</p></div>
+	</div>
+	<div class="container" id="opt2">
+		<div class="box"><p>1</p></div>
+		<div class="box"><p>2</p></div>
+		<div class="box"><p>3</p></div>
+		<div class="box"><p>4</p></div>
+	</div>
+	<div class="container" id="opt3">
+		<div class="box"><p>1</p></div>
+		<div class="box"><p>2</p></div>
+		<div class="box"><p>3</p></div>
+		<div class="box"><p>4</p></div>
+	</div>
+	<div class="container" id="opt4">
+		<div class="box"><p>1</p></div>
+		<div class="box"><p>2</p></div>
+		<div class="box"><p>3</p></div>
+		<div class="box"><p>4</p></div>
+	</div>
+	<div class="container" id="opt5">
+		<div class="box"><p>1</p></div>
+		<div class="box"><p>2</p></div>
+		<div class="box"><p>3</p></div>
+		<div class="box"><p>4</p></div>
+	</div>
+	<div class="container" id="opt6">
+		<div class="box"><p>1</p></div>
+		<div class="box"><p>2</p></div>
+		<div class="box"><p>3</p></div>
+		<div class="box"><p>4</p></div>
+	</div>
+</body>
+</html>
