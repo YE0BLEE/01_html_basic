@@ -1,2 +1,2 @@
 # 01_html_basic
-way-of-mandalroian
+html basic study
